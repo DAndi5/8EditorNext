@@ -1,0 +1,24 @@
+// Note: Outside of codesandbox, this can be `@use 'react-md' as *;`
+@use 'react-md/dist/everything' as *;
+
+.container {
+  display: grid;
+  grid-template: max-content 1fr / 1fr;
+  height: 100%;
+}
+
+.appbar {
+  overflow: auto;
+  padding: 0 0.5rem;
+}
+
+.text {
+  @include rmd-typography-theme(max-width, line-width);
+
+  justify-self: center;
+  margin: 1rem;
+}
+
+.dialog {
+  width: 30rem;
+}
